@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/js_90_Andrij-Panasenko/assets/favicon-a9d2f181.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <title>Bookshelf</title>
+    <script type="module" crossorigin src="/js_90_Andrij-Panasenko/assets/index-499eed56.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_90_Andrij-Panasenko/assets/modal-pop-up-7321e618.js">
+    <link rel="stylesheet" href="/js_90_Andrij-Panasenko/assets/modal-pop-up-37583377.css">
+  </head>
+  <body>
+    <!-- header -->
+
+    
+<header class="page-header">
+  <div class="header-container">
+    <nav class="page-nav">
+      <a href="./index.html" class="header-logo link">
+        <svg class="header-logo-icon" width="24" height="24">
+          <use href="/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#icon-logo-2"></use>
+        </svg>
+        <svg class="header-logo-icon-text" width="77" height="13">
+          <use href="/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#icon-Bookshelf"></use>
+        </svg>
+      </a>
+      <ul class="header-menu list">
+        <li class="header-menu-item">
+          <a class="header-menu-link link current" href="./index.html">Home</a>
+        </li>
+        <li class="header-menu-item">
+          <a
+            class="header-menu-link link header-menu-shop"
+            href="./shopping-list.html"
+            >Shopping list<svg
+              class="header-menu-icon-shop"
+              width="20"
+              height="20"
+            >
+              <use href="/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#icon-vector"></use></svg></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-wrap-button">
+      <label id="switch" class="switch">
+        <input type="checkbox" id="slider" />
+        <span class="slider round"></span>
+      </label>
+      <button class="mobile-menu-open" type="button">
+        <svg class="mobile-menu-open-icon" width="28" height="28">
+          <use href="/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#icon-align-left" class="icon-burger"></use>
+          <use href="/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#icon-x" class="mobile-menu-close-icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>   
+
+  <!-- Mobile menu -->
+ 
+
+<div class="mobile-menu">
+  <div class="background">
+    <div class="mobile-menu-wrapper">
+      <ul class="mobili-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link link current">Home</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a
+            href="./shopping-list.html"
+            class="mobile-menu-link link mobile-menu-shop"
+            >Shopping list<svg
+            class="header-menu-icon-shop"
+            width="20"
+            height="20">
+            <use href="/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#icon-vector"></use></svg></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- main section -->
+    <main>
+      
+
+      <div class="page-wrapper main-container">
+        <!-- ----- Sidebar ----- -->
+        <aside class="sidebar-element">
+          <!-- ----- All categories ----- -->
+          <section>
+  <div class="categories-container js-container">
+    <ul class="categories-list">
+      <li class="categories-item">
+        <button type="submit" class="categories-btn">All categories</button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+          <!-- ----- Support Ukraine -----  -->
+          <div class="org-container">
+    <div class="flex-org-list">
+        <div class="flex-org-title">
+            <h1 class="org-title"><span class="upper-letter">s</span>upport <span class="upper-letter">u</span>kraine
+            </h1>
+            <svg class="trisub-image" width="20" height="32">
+                <use href="/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#trisub-icon"></use>
+            </svg>
+        </div>
+        <div class="slider-container">
+            <ul id="organizations-list" class="organization-container"></ul>
+        </div>
+    </div>
+</div>
+        </aside>
+
+        <!-- ----- Main section ----- -->
+        <section class="content-element">
+          
+    <div class="home-container">
+  <h2 class="main-title">
+    Best Seller
+    <span class="main-title--last-word-static">Books</span>
+  </h2>
+  <div class="content-rendering-container js-container"></div>
+</div>
+
+
+
+          <button class="scroll-up-btn">
+    <div class="inner-ellipse">
+        <svg class='scroll-up-svg' width='24' height='24'>
+            <use href = '/js_90_Andrij-Panasenko/assets/icons-753ef21f.svg#icon-scroll-up-arrow'></use>
+        </svg>
+    </div>
+</button>
+    </main>
+
+    <!-- Modal pop up -->
+    <div class="backdrop-pop-up is-hidden" data-pop-up>
+  <div class="modal-pop-up">
+    <button
+      type="button"
+      class="close-button"
+      data-pop-up-close
+      aria-label="Close"
+    >
+      <svg class="close-button__icon" width="18" height="18">
+        <use href="../images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+
+    <div class="modal-pop-up-content"></div>
+
+    <button type="button" class="modal-pop-up-btn button">
+      Add to shopping list
+    </button>
+  </div>
+</div>
+
+    
+    
+  </body>
+</html>
